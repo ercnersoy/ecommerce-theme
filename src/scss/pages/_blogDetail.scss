@@ -1,0 +1,20 @@
+.blogDetail{
+    .blog-post{
+        img{
+            max-width: 1110px;
+            width: 100%;
+            text-align: center;
+        }
+        h2{
+            font-family: "Oswald";
+            @extend .font-weight--600;
+            @extend .font-size--48;
+            @extend .line-height--62;
+            text-transform: uppercase;
+          }
+          p{
+              line-height: 20px;
+              text-align: left;
+          }
+    }
+}

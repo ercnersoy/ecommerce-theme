@@ -1,0 +1,423 @@
+header{
+  position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.my-navbar {
+  font-family: Oswald;
+  background-color: $color--black;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-left: 21px;
+  padding-right: 21px;
+  .menu {
+    justify-content: center !important;
+  }
+
+  .active {
+    border-bottom: 3px solid $color--eb5757;
+  }
+  .nav-item-search {
+    font-family: "Oswald";
+    font-style: normal;
+    @extend .font-weight--600;
+    @extend .font-size--14;
+    @extend .line-height--21;
+    text-transform: uppercase;
+    margin-right: 29px;
+    max-height: 40px;
+    display: flex;
+    a {
+      color: $color--white !important;
+    }
+  }
+  .nav-item .dropdown {
+    font-family: "Oswald";
+    font-style: normal;
+    @extend .font-weight--600;
+    @extend .font-size--14;
+    @extend .line-height--21;
+    text-transform: uppercase;
+    margin-right: 29px;
+    max-height: 40px;
+    display: flex;
+    img {
+      width: 16px;
+    }
+    .nav-link {
+      color: $color--white;
+    }
+  }
+
+  .nav-item{
+    &:hover {
+      border-bottom: 3px solid $color--eb5757 !important;
+    }
+  }
+
+  .account {
+    color: $color--white;
+    ul {
+      li {
+        display: inline;
+        margin-right: 10px;
+
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      span{
+        position: absolute;
+        color:$color--white;
+        background-color:$color--eb5757;
+        right: 86px;
+        bottom: 30px;
+        max-width: 17px;
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+        font-size: 10px;
+        line-height: 100%;
+      }
+    }
+
+
+
+
+
+    .dropdown-menu{
+      background-image: none;
+      width: max-content;
+      right: 155px !important;
+      left: auto;
+ 
+      .nav-item{
+      &:hover {
+        border-bottom: 0px solid $color--eb5757 !important;
+      }
+      a{
+        color: $color--black !important;
+        padding: 0;
+      }
+    }
+    }
+    .dropdown-container {
+      .navbar-nav li > span {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-weight: bold;
+        @extend .font-weight--600;
+        @extend .font-size--14;
+        @extend .line-height--21;
+      }
+    
+      .nav-item {
+        font-family: "Oswald";
+        font-style: normal;
+        @extend .font-weight--400;
+        @extend .font-size--14;
+        @extend .line-height--30;
+        margin-right: 29px;
+        max-height: 40px;
+        display: flex;
+        img {
+          width: 16px;
+        }
+        .nav-link {
+          color: $color--black;
+          &:hover {
+            border-bottom: 0px solid $color--eb5757;
+            color: $color--black;
+          }
+        }
+        .dropdown-menu-title {
+          @extend .font-weight--500;
+          @extend .font-size--18;
+          @extend .line-height--3;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          border-bottom: 2px solid $color--black;
+          &:hover {
+            border-bottom: 2px solid $color--black;
+            color: $color--black;
+          }
+        }
+      }
+    
+      /* adds some margin below the link sets  */
+      .navbar .dropdown-menu div[class*="col"] {
+        margin-bottom: 1rem;
+      }
+    }
+
+
+
+
+
+
+
+  }
+  .shopping-cart {
+    font-family: Roboto Medium;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header-price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .togglesearch {
+    display: none;
+    max-width: 230px;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid $color--white;
+    max-height: 40px;
+    height: 100%;
+    padding: 15px;
+    margin: 0;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    transition: 0.5s all ease-in-out;
+    color: $color--white;
+  }
+}
+
+.account a {
+  color: $color--white !important;
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 0px !important;
+  border: 0px !important;
+  h4 {
+    font-family: Oswald;
+    @extend .font-weight--400;
+    @extend .font-size--24;
+    text-transform: uppercase;
+  }
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 0 15px;
+  .row {
+    border-bottom: 2px solid $color--f0f2f2;
+  }
+  img {
+    width: 87% !important;
+  }
+  h1 {
+    font-family: Oswald;
+    @extend .font-weight--500;
+    @extend .font-size--18;
+    @extend .line-height--24;
+  }
+  .features {
+    color: $color--bdbdbd;
+    @extend .font-weight--400;
+    @extend .font-size--14;
+  }
+  .features-text {
+    color: $color--black;
+    @extend .font-weight--400;
+    @extend .font-size--14;
+  }
+  p {
+    @extend .font-weight--400;
+    @extend .font-size--14;
+    @extend .line-height--20;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.7em + 0.93rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color--3f3f3f;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid $color--c4c4c4;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .cart-left-footer {
+    position: absolute;
+    bottom: 0;
+    max-width: 292px;
+    border-top: 2px solid $color--f0f2f2;
+  }
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog {
+  right: 0px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+  left: 0;
+}
+
+.modal-header {
+  border-bottom: 0px !important;
+}
+
+// --------- mega menu
+.dropdown-menu{
+  padding: 70px;
+  background-image: url(assets/images/dropdown-menu.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat-x: no-repeat;
+  .nav-item{
+  &:hover {
+    border-bottom: 0px solid $color--eb5757 !important;
+  }
+}
+}
+.dropdown-container {
+  .navbar-nav li > span {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    @extend .font-weight--600;
+    @extend .font-size--14;
+    @extend .line-height--21;
+  }
+
+  .nav-item {
+    font-family: "Oswald";
+    font-style: normal;
+    @extend .font-weight--400;
+    @extend .font-size--14;
+    @extend .line-height--30;
+    margin-right: 29px;
+    max-height: 40px;
+    display: flex;
+    img {
+      width: 16px;
+    }
+    .nav-link {
+      color: $color--black;
+      &:hover {
+        border-bottom: 0px solid $color--eb5757;
+        color: $color--black;
+      }
+    }
+    .dropdown-menu-title {
+      @extend .font-weight--500;
+      @extend .font-size--18;
+      @extend .line-height--3;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid $color--black;
+      &:hover {
+        border-bottom: 2px solid $color--black;
+        color: $color--black;
+      }
+    }
+  }
+
+  /* adds some margin below the link sets  */
+  .navbar .dropdown-menu div[class*="col"] {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 767px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+    border-bottom: 3px solid transparent !important;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 45px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}
+// --------- mega menu
+
+@media (max-width: 1366px) {
+}
+@include media-breakpoint-down(lg) {
+  .dekstop-menu {
+    display: none;
+  }
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(def) {
+}

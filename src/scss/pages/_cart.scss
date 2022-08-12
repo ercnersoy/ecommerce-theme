@@ -1,0 +1,182 @@
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 0px;
+  vertical-align: middle;
+  img {
+    max-width: 83.59px;
+    width: 100%;
+  }
+  h4 {
+    max-width: 187px;
+    width: 100%;
+    font-family: Oswald;
+    font-style: normal;
+    @extend .font-weight--500;
+    @extend .font-size--18;
+    @extend .line-height--27;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .icons {
+    width: 100% !important;
+    background-color: $color--e6f1fa;
+    padding: 10px;
+  }
+  input {
+    text-align: center;
+    border: 0px;
+  }
+  .input-group {
+    border: 1px solid $color--c4c4c4;
+    max-width: 119px;
+    width: 100%;
+    button {
+      border-radius: 0px;
+      background-color: $color--white;
+      border: 0;
+      z-index: 0;
+      &:hover {
+        background-color: $color--white;
+        color: $color--black;
+      }
+    }
+  }
+
+    label {
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      width: 20px !important;
+      height: 20px !important;
+      cursor: pointer;
+      transition: 0.5s all ease-in-out;
+      border-radius: 100%;
+      box-shadow: 0px 0px 0px 1px $color--bdbdbd;
+      background-color: $color--0f6d81;
+      border: 2px solid $color--white;
+    }
+ 
+}
+thead {
+  tr {
+    th {
+      width: 88px;
+      height: 22px;
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: $color--828282;
+      border-top: 0px !important;
+      border-bottom: 1px solid $color--c4c4c4 !important;
+    }
+  }
+}
+.actions {
+  button {
+    background-color: $color--e6f1fa;
+    border-radius: 0px;
+  }
+  .delete_btn{
+    transform: rotate(45deg);
+  }
+}
+
+.cart_detail {
+  border: 2px solid $color--c4c4c4;
+  background-color: $color--f0f2f2;
+  padding: 32px;
+  h4 {
+    font-family: Oswald;
+    @extend .font-size--24;
+  }
+  .discount_row {
+    .discount_code {
+      width: 85%;
+      border-color: $color--c4c4c4;
+      border-style: solid;
+      border-width: 1px 0px 1px 1px;
+      height: 44px;
+      padding: 11px;
+      font-family: Roboto;
+      @extend .font-size--16;
+      color: $color--c4c4c4;
+    }
+    button {
+      max-width: 150px;
+      width: 100%;
+      height: 44px;
+      border-color: $color--c4c4c4;
+      border-style: solid;
+      border-width: 1px 1px 1px 0px;
+      background-color: $color--white;
+      text-transform: uppercase;
+      font-family: Oswald;
+      @extend .font-weight--500;
+      @extend .font-size--14;
+      letter-spacing: 0.5px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+text-align: center;
+}
+h4{
+    max-width: 100% !important;
+    
+}
+    .input-group{
+        max-width: 100% !important;
+    }
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: 0.6rem;
+    min-width: 320px;
+    border: 1px solid $color--c4c4c4;
+  }
+  table#cart tbody tr td:first-child {
+    background-color: $color--white;
+    color: $color--black;
+    text-align: center;
+  }
+
+
+  .actions::before{
+      display: none !important;
+  }
+
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+    width: 88px;
+    height: 22px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $color--828282;
+  }
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
+}

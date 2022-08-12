@@ -1,0 +1,58 @@
+.searchResult{
+    span{
+        font-family: Oswald;
+        @extend .font-size--24;
+        @extend .line-height--21;
+        @extend .font-weight--400;
+        text-transform: uppercase;
+        color: $color--black;
+    }
+    .geeks{
+            overflow: hidden;
+            margin: 0 auto;
+          
+          img {
+            width: 100%;
+            overflow: hidden;
+            transition: 0.5s all ease-in-out;
+      
+          }
+          img:hover {
+            transition: 0.5s all ease-in-out;
+            transform: scale(1.5);
+          }
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        @extend .font-weight--300;
+        @extend .font-size--18;
+        color:$color--black;
+        text-transform: uppercase;
+        color: $color--bdbdbd;
+    }
+
+    a span {
+        @extend .font-weight--600;
+        @extend .font-size--12;
+        @extend .line-height--18;
+        text-transform: uppercase;
+        color: $color--bdbdbd;
+      }
+
+      .price {
+        @extend .font-weight--500;
+        @extend .font-size--22;
+        @extend .line-height--33;
+      }
+      .discount-price {
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+        @extend .font-size--14;
+        @extend .font-weight--400;
+      }
+      .sale-price {
+        color: $color--eb5757;
+      }
+}

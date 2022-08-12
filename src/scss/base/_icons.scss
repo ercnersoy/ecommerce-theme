@@ -1,0 +1,100 @@
+@mixin svg($name, $width, $height) {
+  width: $width;
+	height: $height;
+  background-image: url('assets/images/svg/#{$name}.svg');
+}
+
+@mixin extend-icon($name, $size, $color)
+{
+   @extend [class^="icon-"];
+   @extend [class*=" icon-"];
+   @extend .#{$name}:before;
+   color:$color;
+   font-size: $size;
+}
+
+[class^="svg-"], [class*=" svg-"] {
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_back_ios:before {
+  content: "\e910";
+  color:$color--black;
+
+}
+.icon-arrow_forward_ios:before {
+  content: "\e90f";
+}
+.icon-plus:before {
+  content: "\e911";
+}
+.icon-arrow2:before {
+  content: "\e90d";
+}
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-cart:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-edit:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\e904";
+}
+.icon-facebook-square:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-heart:before {
+  content: "\e906";
+  color: #fff;
+
+}
+.icon-instagram:before {
+  content: "\e907";
+}
+.icon-instagram-square:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-pinterest:before {
+  content: "\e909";
+}
+.icon-search:before {
+  content: "\e90a";
+}
+.icon-twitter:before {
+  content: "\e90b";
+}
+.icon-twitter-square:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-zoom:before {
+  content: "\e90e";
+}

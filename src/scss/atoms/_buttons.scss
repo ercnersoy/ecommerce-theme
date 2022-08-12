@@ -1,0 +1,258 @@
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  // height: 100%;
+}
+
+.button {
+  max-width: 140px;
+  width: 100%;
+  @include border(2px, solid, $color--c4c4c4);
+  @extend .font-weight--500;
+  @extend .font-size--14;
+  @extend .line-height--21;
+  letter-spacing: 0.5px;
+  color: $color--828282;
+  padding: 13px 38px 13px 38px;
+  &:hover {
+    color: $color--828282;
+    text-decoration: none;
+  }
+}
+
+.subscribe-button {
+  color: $color--3f3f3f;
+  font-family: "Oswald";
+  padding: 11px 80px 11px 80px;
+  background: $color--white;
+  margin-top: 107px;
+  text-align: center;
+  a {
+    @extend .font-weight--normal;
+    @extend .font-size--14;
+    @extend .line-height--21;
+  }
+}
+
+.button-dark-bordered {
+  max-width: 175px;
+  width: 100%;
+  @include border(2px, solid, $color--black);
+  @extend .font-weight--500;
+  @extend .font-size--18;
+  @extend .line-height--21;
+  letter-spacing: 0.5px;
+  color: $color--black;
+  padding: 17px 48px 17px 48px;
+  &:hover {
+    color: $color--white;
+    text-decoration: none;
+    background-color: $color--black;
+  }
+}
+
+.button-add-to-card {
+  font-family: Oswald;
+  max-width: 175px;
+  width: 100%;
+  @include border(2px, solid, $color--black);
+  @extend .font-weight--500;
+  @extend .font-size--14;
+  @extend .line-height--21;
+  letter-spacing: 0.5px;
+  color: $color--white;
+  padding: 17px 48px 17px 48px;
+  background-color: $color--black;
+  transition: 0.5s ease-out 100ms;
+  &:hover {
+    color: $color--white;
+    text-decoration: none;
+    transition: 0.5s ease-out 100ms;
+    box-shadow: 0px 0px 0px 5px $color--e0ddd4;
+  }
+}
+
+.button-save {
+  font-family: Oswald;
+  max-width: 175px;
+  width: 100%;
+  @include border(2px, solid, $color--c4c4c4);
+  @extend .font-weight--500;
+  @extend .font-size--14;
+  @extend .line-height--21;
+  letter-spacing: 0.5px;
+  color: $color--black;
+  padding: 17px 63px 17px 63px;
+  background-color: $color--white;
+  transition: 0.5s ease-out 100ms;
+
+  &:hover {
+    color: $color--black;
+    text-decoration: none;
+    transition: 0.5s ease-out 100ms;
+    box-shadow: 0px 0px 0px 5px $color--e0ddd4;
+  }
+}
+
+.button-sign-in {
+  border: 1px solid $color--3f3f3f;
+  padding: 16px;
+  font-family: Oswald;
+  @extend .font-weight--500;
+  @extend .font-size--14;
+  @extend .line-height--21;
+  text-transform: uppercase;
+  color: $color--3f3f3f;
+  &:hover {
+    color: $color--white;
+    text-decoration: none;
+    background-color: $color--black;
+  }
+}
+
+.button-sign-up {
+  border: 1px solid $color--3f3f3f;
+  padding: 16px;
+  font-family: Oswald;
+  @extend .font-weight--500;
+  @extend .font-size--14;
+  @extend .line-height--21;
+  text-transform: uppercase;
+  color: $color--white;
+  background-color: $color--black;
+
+  &:hover {
+    color: $color--3f3f3f;
+    text-decoration: none;
+    background-color: $color--white;
+  }
+}
+
+// ---
+
+.contact_btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid $color--black;
+  box-shadow: inset 0 0 0 0 $color--black;
+  &:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 $color--black;
+  }
+}
+// ---
+
+.checkout {
+  width: 100%;
+  height: 55px;
+  background-color: $color--black;
+  color: $color--white;
+  border: 0px;
+  transition: ease-out 0.5s;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  &:hover {
+    background-color: $color--white;
+    color: $color--black;
+    transition: ease-out 0.5s;
+    border:1px solid $color--black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@include media-breakpoint-down(lg) {
+  .button-dark-bordered {
+    max-width: 175px;
+    width: 100%;
+    border: 2px solid $color--black;
+    letter-spacing: 0.5px;
+    color: $color--black;
+    padding: 8px 24px 8px 24px !important;
+    &:hover {
+      color: $color--black;
+      text-decoration: none;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+  .button-save {
+    max-width: 85.08px;
+    width: 100%;
+    border: 2px solid $color--c4c4c4;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: $color--black;
+    padding: 17px 50px 17px 50px !important;
+    background-color: $color--white;
+
+    &:hover {
+      color: $color--white;
+      text-decoration: none;
+      background-color: $color--black;
+    }
+  }
+
+  .button-add-to-card {
+    max-width: 85.08px;
+    width: 100%;
+    border: 2px solid $color--black;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: $color--white;
+    padding: 17px 34px 17px 34px !important;
+
+    background-color: $color--black;
+
+    &:hover {
+      color: $color--white;
+      text-decoration: none;
+      background-color: $color--black;
+    }
+  }
+
+  .button-dark-bordered {
+    max-width: 85.08px !important;
+    width: 100%;
+    border: 2px solid $color--black;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: $color--black;
+    padding: 17px 48px 17px 48px;
+
+    &:hover {
+      color: $color--white;
+      text-decoration: none;
+    }
+  }
+}
+@include media-breakpoint-down(def) {
+}

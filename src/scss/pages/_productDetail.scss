@@ -1,0 +1,388 @@
+.product-images .product-gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.share_button {
+  .share {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  a {
+    color: $color--black;
+  }
+}
+.product-gallery-thumbnails .thumbnails-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 60px;
+  &:hover {
+    border: 2px solid;
+    padding: 1px;
+  }
+}
+
+.thumbnails-list li img {
+  display: block;
+  width: 100%;
+}
+
+.product-gallery-featured {
+  img {
+    max-width: 624px;
+    width: 100%;
+  }
+}
+
+.product-images .product-seller-recommended {
+  padding: 20px 20px 0 20px;
+}
+
+.product-comments textarea {
+  height: 50px;
+}
+
+.last-questions-list li {
+  margin-bottom: 20px;
+}
+
+.last-questions-list li span {
+  padding-left: 10px;
+}
+
+.product_info {
+  font-family: Roboto;
+
+  .breadcrumb {
+    a {
+      color: $color--828282;
+    }
+    li {
+      color: $color--828282;
+      @extend .font-size--14;
+    }
+  }
+  h2 {
+    max-width: 493px;
+    width: 100%;
+    font-family: Oswald;
+    @extend .font-weight--500;
+    @extend .font-size--48;
+    @extend .line-height--56;
+    margin-bottom: 20px;
+  }
+  span {
+    font-family: Oswald;
+    @extend .font-size--14;
+    @extend .line-height--21;
+    text-transform: uppercase;
+  }
+
+  // colors
+  input[type="checkbox"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  label {
+    background-color: #ddd;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 30px !important;
+    height: 30px !important;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 1px #e1e8ee;
+  }
+  input[type="checkbox"]:checked + label {
+    box-shadow: 0px 0px 0px 2px $color--black;
+    transition: 0.5s all ease-in-out;
+  }
+  // colors
+
+  .size-choose {
+    max-width: 551px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    input[type="checkbox"]:checked + label {
+      border: 2px solid #86939e;
+      outline: none;
+      box-shadow: 0px 0px 0px 0px black !important;
+    }
+
+  }
+
+  .size__title {
+    max-width: 550px;
+    .selectSize {
+      font-family: Oswald;
+      @extend .font-size--14;
+      @extend .line-height--21;
+      text-transform: uppercase;
+    }
+    .size__guide {
+      font-family: Oswald;
+      @extend .font-size--14;
+      @extend .line-height--21;
+      text-transform: inherit;
+    }
+  }
+
+  .size-choose label {
+    font-family: Oswald;
+    border: 2px solid #e1e8ee;
+    @extend .font-size--14;
+    color: $color--828282;
+    background-color: $color--white;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 5px;
+    text-transform: uppercase;
+    width: 46px !important;
+    height: 46px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .size-choose label:hover,
+  .size-choose label:active,
+  .size-choose label:focus {
+    border: 2px solid #86939e;
+    outline: none;
+  }
+
+  .size-config {
+    border-bottom: 1px solid #e1e8ee;
+    margin-bottom: 20px;
+  }
+
+  .quantity {
+    .input-group__title {
+      font-family: Oswald;
+      @extend .font-size--14;
+      @extend .line-height--21;
+      @extend .font-weight--400;
+      text-transform: uppercase;
+      color: $color--black;
+    }
+    .price {
+      font-family: Oswald;
+      @extend .font-weight--500;
+      @extend .font-size--26;
+      @extend .line-height--39;
+      text-transform: uppercase;
+      color: $color--black;
+    }
+    .discount-price {
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+      @extend .font-size--14;
+      @extend .font-weight--400;
+    }
+
+    .priceDiv {
+      height: 43px;
+    }
+
+    .input-group {
+      border: 1px solid;
+      max-width: 119px;
+      width: 100%;
+    }
+    .btn {
+      border-radius: 0px;
+      border: 0px solid;
+    }
+    .form-control {
+      font-family: Oswald;
+
+      height: 43px;
+      border: 0px;
+      text-align: center;
+    }
+    .input-group-append {
+      @extend .font-size--35;
+      @extend .font-weight--300;
+      color: $color--c4c4c4;
+    }
+  }
+
+  .buttons {
+    span {
+      font-family: Oswald;
+      @extend .font-size--12;
+      @extend .font-weight--500;
+      @extend .line-height--68;
+      text-transform: uppercase;
+      color: $color--828282;
+      margin-right: 20px;
+    }
+    li {
+      display: inline;
+    }
+  }
+}
+
+.myAccordion {
+  max-width: 1310px;
+  .card-header {
+    background-color: $color--f8f9fb;
+  }
+  .card-body {
+    background-color: $color--f8f9fb;
+  }
+  li {
+    list-style: disc;
+  }
+  h5 {
+    @extend .font-size--24;
+    @extend .line-height--68;
+    color: $color--black;
+  }
+  h2 {
+    font-family: Oswald;
+    @extend .font-size--14;
+    @extend .line-height--25;
+    @extend .font-weight--400;
+    color: $color--black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p {
+    @extend .font-size--14;
+    @extend .line-height--30;
+    margin-bottom: 10px;
+  }
+  li {
+    @extend .font-size--14;
+    @extend .line-height--30;
+  }
+}
+
+.product-slider {
+  .geeks {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .discount-price {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+  }
+  img {
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+  }
+  img:hover {
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.5);
+  }
+  .owl-nav {
+    position: absolute;
+    top: -4rem;
+    right: 0.9rem;
+    max-width: 105px;
+    width: 100%;
+    height: 50px;
+  }
+  .owl-prev {
+    background-color: $color--white !important;
+    border: 1px solid black !important;
+    margin-right: 5px;
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    &:hover {
+      background-color: $color--white !important;
+    }
+  }
+  span {
+    color: $color--black;
+  }
+  .owl-next {
+    background-color: $color--white !important;
+    border: 1px solid black !important;
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    &:hover {
+      background-color: $color--white !important;
+    }
+    span {
+      color: $color--black;
+    }
+  }
+  h1 {
+    font-family: Oswald;
+    @extend .font-size--24;
+    @extend .line-height--68;
+  }
+  span {
+    font-family: Oswald;
+    @extend .font-weight--600;
+    @extend .font-size--12;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $color--bdbdbd;
+  }
+  p {
+    font-family: Oswald;
+    @extend .font-weight--300;
+    @extend .font-size--18;
+    line-height: 18px;
+    color: $color--black;
+  }
+  h3 {
+    font-family: Oswald;
+    @extend .font-weight--500;
+    @extend .font-size--22;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 1366px) {
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(def) {
+  .product_info {
+    .buttons {
+      span {
+        font-family: Oswald;
+        text-transform: uppercase;
+        color: $color--828282;
+        margin-right: 25px;
+        line-height: 30px;
+      }
+      li {
+        display: block !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .breadcrumb {
+    justify-content: center;
+    margin-top: 20px !important;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
+}

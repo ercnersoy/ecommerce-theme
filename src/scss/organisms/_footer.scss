@@ -1,0 +1,236 @@
+footer {
+  background-color: $color--black;
+  color: $color--white;
+  font-family: Oswald;
+  hr {
+    border-top: 1px solid $color--4f4f4f;
+  }
+  h5 {
+    font-style: normal;
+    @extend .font-weight--600;
+    @extend .font-size--18;
+    line-height: 27px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    @extend .mt-2;
+  }
+
+  ul {
+    font-family: "Roboto Medium";
+    line-height: 27px;
+    @extend .font-size--13;
+    text-transform: uppercase;
+    color: $color--828282;
+
+    li {
+      a {
+        color: $color--828282;
+      }
+    }
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 5px;
+    color: $color--white;
+  }
+  p {
+    @extend .mb-3;
+  }
+  span {
+    &::before {
+      width: 23px;
+    }
+  }
+
+  small {
+    font-family: Roboto;
+    @extend .font-weight--700;
+    @extend .font-size--12;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $color--white;
+  }
+
+  input {
+    max-width: 217px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid $color--white;
+    max-height: 40px;
+    height: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    &::placeholder {
+      color: $color--white;
+      font-family: Roboto;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+#accordion{
+  display: none;
+}
+
+.bg-blue {
+  font-family: Oswald;
+  background-color: $color--e6f1fa;
+  padding: 42px;
+  img {
+    margin-right: 20px;
+  }
+  .check-icons{
+  ul {
+    margin-right: 2rem;
+    text-transform: none;
+    color:$color--black;
+  }
+  li {
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+}
+
+@media (max-width: 1366px) {
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(md) {
+  .check-icons {
+    width: 240px;
+  }
+  footer {
+    text-align: center;
+  }
+
+  .footer-desktop{
+    display: none;
+  }
+  #accordion{
+    display: block;
+    background-color: $color--black;
+    text-align: center;
+    img{
+      max-width: 102.2px;
+      width: 100%;
+      
+    }
+
+    .card{
+      background-color: $color--black;
+      text-align: left;
+
+    .card-header{
+      background-color: $color--black;
+      border-bottom: 1px solid $color--4f4f4f;
+      padding: 0px;
+    }
+
+    .card-body{
+      padding: 10px;
+    }
+
+    hr {
+      border-top: 1px solid $color--4f4f4f;
+    }
+    .btn{
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color:$color--white;
+
+
+    }
+  }
+    ul {
+      font-family: "Roboto Medium";
+      line-height: 27px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: $color--828282;
+  
+      li {
+        text-align: left !important;
+        a {
+          color: $color--828282;
+          display: block;
+          width: 100%;
+          padding: 6.5px;
+          text-align: left;
+        }
+      }
+    }
+  
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 5px;
+      color: $color--white;
+    }
+    p {
+      margin-top: 1rem !important;
+    }
+    span {
+      &::before {
+        width: 23px;
+        color: $color--828282;
+      }
+    }
+  
+
+  
+    input {
+      max-width: 100%;
+      background: transparent;
+      border: 1px solid $color--white;
+      max-height: 40px;
+      height: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      &::placeholder {
+        color: $color--white;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    .subscribe{
+      border-bottom:0px;
+    }
+
+  }
+
+  small {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $color--white;
+    text-align: left;
+   
+  }
+
+  }
+}
+@include media-breakpoint-down(sm) {
+  
+}
+@include media-breakpoint-down(def) {
+ 
+}

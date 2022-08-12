@@ -1,0 +1,33 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-family: "Roboto";
+ }
+
+ .custom-container{
+     padding-left: 21px;
+     padding-right: 21px;
+ }
+
+ h3{
+    font-family: "Oswald";
+ }
+
+ a{
+     &:hover{
+         color:$color--828282;
+         text-decoration: none;
+     }
+ }
+
+
+
+
+
+@media (max-width:1366px) { }
+@include media-breakpoint-down(lg)  { }
+@include media-breakpoint-down(md)  { }
+@include media-breakpoint-down(sm)  { }
+@include media-breakpoint-down(def) { }

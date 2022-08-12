@@ -1,0 +1,39 @@
+.my-mt-140 {
+  margin-top: 140px;
+}
+
+.blogList {
+    font-family: Oswald;
+    a{
+        color: $color--black;
+        &:hover{
+            color: $color--828282;
+        }
+    }
+  img {
+    height: 225px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+  }
+  h2{
+    font-family: Oswald;
+    @extend .font-weight--500;
+    @extend .font-size--18;
+    line-height: 25px;
+  }
+  p{
+    color: $color--bdbdbd;
+    line-height: 20px;
+  }
+  .geeks {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  img:hover {
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.5);
+  }
+}

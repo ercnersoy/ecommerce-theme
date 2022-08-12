@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Commerce</title>
+  </head>
+
+  <body data-template="index">
+    <mobilemenu></mobilemenu>
+    <header></header>
+
+    <!-- Cart-Modal -->
+    <div class="cart-container">
+      <div
+        class="modal left fade"
+        id="modalPoll"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalPoll"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header p-1">
+              <button
+                type="button"
+                class="close m-0"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./assets/icons/close.svg" alt="search" class="mr-2" />
+              </button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-4 p-2">
+                  <img src="./assets/images/product-1.png" alt="" />
+                </div>
+                <div class="col-6 p-1">
+                  <h1>Angels malu zıp jeans slım black used</h1>
+                  <span class="features">SIZE: </span
+                  ><span class="features-text">W31/L34</span> <br />
+                  <span class="features">ART.NO.: </span
+                  ><span class="features-text">434536465</span><br />
+                  <span class="features-text">1 x 129,00 EUR</span>
+                </div>
+                <div class="col-2 p-2 text-center">
+                  <a href="#">
+                    <img
+                      src="./assets/icons/cart-delete.svg"
+                      alt="search"
+                      class="mr-2"
+                  /></a>
+                  <a href="#">
+                    <img
+                      src="./assets/icons/cart-edit.svg"
+                      alt="search"
+                      class="mr-2"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 p-2">
+                  <img src="./assets/images/product-2.png" alt="" />
+                </div>
+                <div class="col-6 p-1">
+                  <h1>Angels malu zıp jeans slım black used</h1>
+                  <span class="features">SIZE: </span
+                  ><span class="features-text">W31/L34</span> <br />
+                  <span class="features">ART.NO.: </span
+                  ><span class="features-text">434536465</span><br />
+                  <span class="features-text">1 x 129,00 EUR</span>
+                </div>
+                <div class="col-2 p-2 text-center">
+                  <a href="#">
+                    <img
+                      src="./assets/icons/cart-delete.svg"
+                      alt="search"
+                      class="mr-2"
+                  /></a>
+                  <a href="#">
+                    <img
+                      src="./assets/icons/cart-edit.svg"
+                      alt="search"
+                      class="mr-2"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="mb-12 cart-left-footer w-100">
+                <h1 class="mb-3 mt-3 d-flex justify-content-between">
+                  Cart Subtotal: <span class="total-price">139,00 EUR</span>
+                </h1>
+                <a href="cart.html" class="button-sign-in btn-block text-center mb-3"
+                  >Vıew and edıt cart</a
+                >
+                <a href="#" class="button-sign-up btn-block text-center"
+                  >go to checkout</a
+                ><br />
+              </div>
+            </div>
+          </div>
+          <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+      </div>
+    </div>
+    <!-- Cart-Modal -->
+    <!-- Sign-Modal -->
+    <div class="sign-container">
+      <div
+        class="modal left fade"
+        id="LikemodalPoll"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="LikemodalPoll"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header p-1">
+              <button
+                type="button"
+                class="close m-0"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./assets/icons/close.svg" alt="search" class="mr-2" />
+              </button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+
+            <div class="modal-content">
+              <div class="modal-body mx-3 p-0">
+                <h4 class="mb-5 mt-3">logın your account</h4>
+
+                <div class="md-form mb-3">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input
+                    type="email"
+                    id="defaultForm-email"
+                    class="form-control validate"
+                    placeholder="daisy.watson@example.com"
+                  />
+                </div>
+
+                <div class="md-form mb-4">
+                  <i class="fas fa-lock prefix grey-text"></i>
+                  <input
+                    type="password"
+                    id="defaultForm-pass"
+                    class="form-control validate"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <div class="mb-5 d-flex">
+                  <input
+                    type="checkbox"
+                    class="mr-2 mt-1"
+                    aria-label="Checkbox for following text input"
+                  />
+                  <p>
+                    By using this form you agree with the storage and handling
+                    of your data by this website.
+                  </p>
+                </div>
+
+                <div class="mb-12">
+                  <a href="#" class="button-sign-in btn-block text-center mb-3" data-toggle="modal" data-target="#LikemodalPoll"
+                    >SIGN IN</a
+                  >
+                  <a href="#" class="button-sign-up btn-block text-center" data-toggle="modal" data-target="#RegisterModal"
+                    >create an account</a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+      </div>
+    </div>
+    <!-- Sign-Modal -->
+
+    <!-- Register-Modal -->
+    <div class="sign-container">
+      <div
+        class="modal left fade"
+        id="RegisterModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="RegisterModal"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header p-1">
+              <button type="button" class="close m-0" data-dismiss="modal" aria-label="Close">
+                <img src="./assets/icons/close.svg" alt="search" class="mr-2" />
+              </button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+
+            <div class="modal-content">
+              <div class="modal-body mx-3 p-0">
+                <h4 class="mb-5 mt-3">logın your account</h4>
+
+
+
+                <div class="md-form mb-3">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input
+                    type="email"
+                    id="userName"
+                    class="form-control validate"
+                    placeholder="First Name"
+                  />
+                </div>
+
+                <div class="md-form mb-3">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input
+                    type="email"
+                    id="userSurname"
+                    class="form-control validate"
+                    placeholder="Surname"
+                  />
+                </div>
+                <div class="md-form mb-3">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input
+                    type="email"
+                    id="defaultForm-email"
+                    class="form-control validate"
+                    placeholder="daisy.watson@example.com"
+                  />
+                </div>
+
+                <div class="md-form mb-4">
+                  <i class="fas fa-lock prefix grey-text"></i>
+                  <input
+                    type="password"
+                    id="userPassword"
+                    class="form-control validate"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="md-form mb-3">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input
+                    type="password"
+                    id="userRePassword"
+                    class="form-control validate"
+                    placeholder="Re-password"
+                  />
+                </div>
+
+                <div class="mb-5 d-flex">
+                  <input
+                    type="checkbox"
+                    class="mr-2 mt-1"
+                    aria-label="Checkbox for following text input"
+                  />
+                  <p>
+                    <label for="terms">
+                      By using this form you agree with the storage and handling of your data by this website.
+                    </label>
+                  </p>
+                </div>
+
+                <div class="mb-12">
+                  <a href="#" class="button-sign-up btn-block text-center"
+                    >create an account</a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+      </div>
+    </div>
+    <!-- Register-Modal -->
+
+
+
+
+
+
+
+
+
+
+    <!-- start-slider -->
+    <div class="slider p-3 my-mt-180">
+      <div id="owl-demo" class="owl-carousel owl-theme my-mt">
+        <div class="item">
+          <div class="slider-1">
+            <div class="row align-items-center">
+              <div
+                class="
+                  col-md-6 col-md-6
+                  d-flex
+                  justify-content-center
+                  order-md-1 order-2
+                  mb-5
+                "
+              >
+                <div class="slider-text mb-5">
+                  <h1 class="mb-5">
+                    <span class="line"></span>
+                    SUMMER SALE GET <span class="border-text">30% OFF</span
+                    ><br />
+                    On all dress.
+                  </h1>
+                  <a href="#" class="button-dark-bordered mt-4">SHOP NOW</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 d-flex order-md-2 order-1 p-4">
+                <img
+                  src="./assets/images/image 2.png"
+                  alt="slider"
+                  class="img-left"
+                />
+              </div>
+              <div class="col-md-3 col-6 order-md-3 order-1 mt-3">
+                <img
+                  src="./assets/images/image 3.png"
+                  alt="slider"
+                  class="img-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slider-1">
+            <div class="row align-items-center">
+              <div
+                class="
+                  col-md-6 col-md-6
+                  d-flex
+                  justify-content-center
+                  order-md-1 order-2
+                  mb-5
+                "
+              >
+                <div class="slider-text mb-5">
+                  <h1 class="mb-5">
+                    <span class="line"></span>
+                    SUMMER SALE GET <span class="border-text">30% OFF</span
+                    ><br />
+                    On all dress.
+                  </h1>
+                  <a href="#" class="button-dark-bordered mt-4">SHOP NOW</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 d-flex order-md-2 order-1 p-4">
+                <img
+                  src="./assets/images/image 2.png"
+                  alt="slider"
+                  class="img-left"
+                />
+              </div>
+              <div class="col-md-3 col-6 order-md-3 order-1 mt-3">
+                <img
+                  src="./assets/images/image 3.png"
+                  alt="slider"
+                  class="img-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slider-1">
+            <div class="row align-items-center">
+              <div
+                class="
+                  col-md-6 col-md-6
+                  d-flex
+                  justify-content-center
+                  order-md-1 order-2
+                  mb-5
+                "
+              >
+                <div class="slider-text mb-5">
+                  <h1 class="mb-5">
+                    <span class="line"></span>
+                    SUMMER SALE GET <span class="border-text">30% OFF</span
+                    ><br />
+                    On all dress.
+                  </h1>
+                  <a href="#" class="button-dark-bordered mt-4">SHOP NOW</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 d-flex order-md-2 order-1 p-4">
+                <img
+                  src="./assets/images/image 2.png"
+                  alt="slider"
+                  class="img-left"
+                />
+              </div>
+              <div class="col-md-3 col-6 order-md-3 order-1 mt-3">
+                <img
+                  src="./assets/images/image 3.png"
+                  alt="slider"
+                  class="img-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-slider -->
+
+    <div class="custom-container">
+      <!-- start-brand -->
+      <div class="brand">
+        <fieldset class="mb-2">
+          <legend>
+            <h3>chose your brand</h3>
+          </legend>
+          <div class="row pr-3 pl-3 mb-2 m-0">
+            <div class="owl-logos owl-carousel owl-theme">
+              <div class="item">
+                <img src="./assets/images/chanel.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/burberry.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/dior.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/fendi.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/versace.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/gucci.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/armani.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <!-- end-brand -->
+
+      <!-- start-banners-desktop-->
+      <div class="banners mt-3 p-0">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <div class="justify-content-end d-flex banners__banner-1">
+                  <div class="banner-content mt-5 mb-5 pt-5 pb-5 mr-5 pr-5">
+                    <h1>
+                      <span class="d-flex"
+                        >choosе <br />
+                        your look</span
+                      >
+                    </h1>
+                    <br />
+                    <p class="mb-5">Popular clothing brands</p>
+                    <a href="#" class="button-dark-bordered">SEE OFFERS</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 mt-4 mb-4">
+                <div class="d-flex banners__banner-2">
+                  <div class="banner-content mt-5 mb-5 pt-5 pb-5 ml-5">
+                    <h1>
+                      <span class="d-flex">brand new style</span>
+                    </h1>
+                    <br />
+                    <p class="mb-5">Popular clothing brands</p>
+                    <a href="#" class="button-dark-bordered">SEE OFFERS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              col-lg-6
+              mb-4
+              align-items-end
+              p-5
+              d-flex
+              justify-content-start
+              banners__banner-3
+            "
+          >
+            <div class="banner-content mt-5 mb-5 pt-5 pb-5 mr-4">
+              <h1>
+                <span class="d-flex">up to 40% off</span>
+              </h1>
+              <br />
+              <p class="mb-5">Special offers and great deals</p>
+              <a href="#" class="button-dark-bordered">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-banners-desktop-->
+
+      <!-- start-banners-mombile-->
+      <div class="row mobile-banner">
+        <div class="col-12 p-0 mt-3 mb-3">
+          <div class="justify-content-end d-flex pb-3 mobile-banner-1">
+            <div class="p-3 align-self-center">
+              <h1>
+                <span class="d-flex">choose your look</span>
+              </h1>
+              <p class="mb-3">See our clothing collections</p>
+              <a href="#" class="button-dark-bordered">SEE OFFERS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 p-0 mb-3">
+          <div class="justify-content-start d-flex pb-5 pt-5 mobile-banner-3">
+            <div class="pt-5 pl-3 pn-5 align-self-center">
+              <h1 class="title-center-banner">
+                <span class="d-flex">up to 40% off</span>
+              </h1>
+              <p class="mb-3">Special offers and great deals</p>
+              <a href="#" class="button-dark-bordered">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 p-0 mb-3">
+          <div class="justify-content-start d-flex pt-3 pb-3 mobile-banner-2">
+            <div class="p-3 align-self-center">
+              <h1>
+                <span class="d-flex">brand new style</span>
+              </h1>
+              <p class="mb-3">Popular clothing brands</p>
+              <a href="#" class="button-dark-bordered">SEE OFFERS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-banners-mombile-->
+
+      <!-- start-product-list -->
+      <div class="product-list mb-3">
+        <div class="row">
+          <!-- start-filter -->
+          <div class="col-12 col-sm-3 filter mt-4 d-none d-sm-none d-md-block">
+            <h3 class="filter-title mb-4">Shop Some Wear:</h3>
+            <!-- start-checkbox -->
+            <label class="container mb-5 pl-5 filter-item"
+              >Best sellers
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >Two
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >NEW Arıvals
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >TOP women
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >Collectıon: Summer
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >Collectıon: sprıng
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container mb-5 pl-5 filter-item"
+              >Trendıng
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- end-checkbox -->
+          </div>
+          <!-- end-filter -->
+          <!-- start-list -->
+          <div class="col">
+            <div class="row">
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <a href="productDetail.html"><img src="./assets/images/product-1.png" alt="" /></a>
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="productDetail.html">
+                  <p class="mt-2">Angels malu zıp jeans slım black used er</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="assets/images/product-2.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-4.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-3.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="ccol-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2 sale-price">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price">119,00 EUR</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-5.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-6.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2 sale-price">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price">119,00 EUR</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-7.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3 mt-4">
+                <div class="geeks mx-auto">
+                  <img src="./assets/images/product-8.png" alt="" />
+                </div>
+                <a href="#"><span>TOP WOMEN</span></a>
+                <a href="#">
+                  <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+                >
+                <div class="row mt-2">
+                  <div class="col-12 col-md-4 pl-3 pr-0">
+                    <h3 class="price mb-2">139,00 EUR</h3>
+                  </div>
+                  <div class="col-12 col-md-4 mt-2">
+                    <span class="discount-price"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-12 mt-5 mb-5 text-center">
+                <a href="#" class="button">LOAD MORE</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-list -->
+        </div>
+      </div>
+      <!-- end-product-list -->
+
+      <!-- start-full-witdh-banner-desktop -->
+      <div class="custom-container full-width-banner-desktop mb-5">
+        <div class="row pt-5 pb-5">
+          <div class="col-12 col-md-6 pl-0 p-5 align-self-center">
+            <div class="full-width-banner-left mx-auto">
+              <h1>
+                <span class="d-flex">shopıng wıthout lımıts.</span>
+              </h1>
+              <br />
+              <p class="mb-5">
+                You can choose the best option for you, and it does not matter
+                whether you are in Prague or San Francisco. We will deliver your
+                purchase anywhere!
+              </p>
+              <a href="#" class="button-dark-bordered">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-full-witdh-banner-desktop -->
+    </div>
+
+    <!-- start-full-witdh-banner-footer-mobile -->
+    <div class="show-mobile mb-4 p-1">
+      <div class="col-12 d-flex p-0">
+        <div class="col-12 p-4 bg-full-width-image">
+          <div class="mobile-content text-left">
+            <h2>explore the best of you.</h2>
+            <p>
+              Choose the best option for you, and it does not matter whether you
+              are.
+            </p>
+            <a href="" class="button-dark-bordered">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-full-witdh-banner-footer-mobile -->
+
+    <!-- start-featured-Items -->
+    <div class="product-slider">
+      <h1 class="ml-2">Featured-Items</h1>
+      <div
+        class="Featured-Items owl-carousel owl-theme owl-loaded owl-drag mb-5">
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-1.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-2.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-3.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-4.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-5.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-6.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-7.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="ml-2">Most Popular</h1>
+      <div
+        class="Featured-Items owl-carousel owl-theme owl-loaded owl-drag mb-5"
+      >
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-7.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-6.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-5.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-4.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-4.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-3.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-12">
+            <div class="geeks">
+              <img src="./assets/images/product-1.png" alt="" />
+            </div>
+            <a href="#"><span>TOP WOMEN</span></a>
+            <a href="#">
+              <p class="mt-2">Angels malu zıp jeans slım black used</p></a
+            >
+            <div class="row mt-2">
+              <div class="col-12 col-md-4 pl-3 pr-0">
+                <h3 class="price mb-2">139,00 EUR</h3>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <span class="discount-price"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-featured-Ites -->
+
+    <!-- start-full-witdh-banner-footer-dekstop -->
+    <div class="custom-container full-width-banner-footer-desktop mb-5">
+      <div class="row pr-2 pl-2">
+        <div class="col-12 col-md-6 pl-0 img-left"></div>
+        <div class="col-12 col-md-6 pl-0">
+          <div class="full-width-banner-footer-left mx-auto">
+            <h1>
+              <span class="d-flex">EXPLORE THE BEST OF YOU.</span>
+            </h1>
+            <br />
+            <p class="mb-5">
+              You can choose the best option for you, and it does not matter
+              whether you are in Prague or San Francisco.
+            </p>
+            <a href="#" class="button-dark-bordered">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-full-witdh-banner-footer-desktop -->
+
+    <!-- start-full-witdh-banner-footer-mobile -->
+    <div class="custom-container show-mobile mb-4">
+      <div
+        class="
+          full-width-banner-mobile
+          bg-full-width-footer-image
+          pr-4
+          pl-4
+          d-flex
+          align-items-center align-self-center
+          justify-content-center
+        "
+      >
+        <div class="full-width-banner-mobile-content bg-white p-4 my-mt mb-3">
+          <h2>explore the best of you.</h2>
+          <p>
+            You can choose the best option for you, and it does not matter
+            whether you are in Prague or San Francisco.
+          </p>
+          <a href="" class="button mt-4">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- end-full-witdh-banner-footer-mobile -->
+
+    <!-- start-blog -->
+    <div class="blog w-100">
+      <div class="custom-container">
+        <h1 class="pt-3 mb-1">Blog</h1>
+        <div class="row pb-5 justify-content-center">
+          <div class="col-md-3 bg-white blog-post mb-2">
+            <span>Artıcle</span>
+            <a href="#">
+              <h3>
+                Exactly What To Wear To Every Type Of Wedding This Summer
+              </h3></a
+            >
+            <p>
+              A large part of the business here is building up the "experience".
+              Double-page spreads in magazines. Ads on TV. Product placement and
+              sponsorship in golf tournaments, tennis matches and sailing
+              competitions. All of this builds up your perception of the brand -
+              and additionally, it costs money.
+            </p>
+            <div class="row">
+              <div class="col-12 position-absolute w-100 bottom-0">
+                <hr />
+                <span class="blog-date">21 January 2018 by guido </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bg-white blog-post mb-2">
+            <span>TOP WOMEN</span>
+            <a href="#">
+              <h3>
+                Exactly What To Wear To Every Type Of Wedding This Summer
+              </h3></a
+            >
+            <p>
+              When selling 70% fewer shirts, however, there are fewer shirts on
+              the market, making it more exclusive, and therefore worth the
+              money, for those to whom it matters.
+            </p>
+            <div class="row">
+              <div class="col-12 position-absolute w-100 bottom-0">
+                <hr />
+                <span class="blog-date">21 January 2018 by guido </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bg-white blog-post mb-2">
+            <span>TOP WOMEN</span>
+            <a href="#">
+              <h3>
+                Exactly What To Wear To Every Type Of Wedding This Summer
+              </h3></a
+            >
+            <p>
+              A large part of the business here is building up the "experience".
+              Double-page spreads in magazines. Ads on TV. Product placement and
+              sponsorship in golf tournaments, tennis matches and sailing
+              competitions. All of this builds up your perception of the brand -
+              and additionally, it costs money.
+            </p>
+            <div class="row">
+              <div class="col-12 position-absolute w-100 bottom-0">
+                <hr />
+                <span class="blog-date">21 January 2018 by guido </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bg-white blog-post mb-2">
+            <span>TOP WOMEN</span>
+            <a href="#"
+              ><h3>
+                Exactly What To Wear To Every Type Of Wedding This Summer
+              </h3></a
+            >
+            <p>
+              When selling 70% fewer shirts, however, there are fewer shirts on
+              the market, making it more exclusive, and therefore worth the
+              money, for those to whom it matters.
+            </p>
+            <div class="row">
+              <div class="col-12 position-absolute w-100 bottom-0">
+                <hr />
+                <span class="blog-date">21 January 2018 by guido </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-blog -->
+
+    <footer></footer>
+  </body>
+</html>
+
+
